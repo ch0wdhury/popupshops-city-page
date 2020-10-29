@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/> -->
     
     <!-- Style CSS -->
@@ -207,25 +208,41 @@
           <div class="col-lg-7 col-md-6 col-12">
             <div class="image-gallery-image-content">
               <div class="row no-gutters">
-                <div class="col-6">
-                  <img src="images/gallery-1.png" class="img-fluid h-100" alt="Gallery Image">
+                <div class="col-6 pr-1">
+                  <a href="images/gallery-1.png" data-toggle="lightbox" data-gallery="gallery-images">
+                      <img src="images/gallery-1.png" class="img-fluid h-100">
+                  </a>
+                  <!-- <img src="images/gallery-1.png" class="img-fluid h-100" alt="Gallery Image"> -->
                 </div>
                 <div class="col-6">
-                  <img src="images/gallery-2.png" class="img-fluid w-100" alt="Gallery Image">
+                  <a href="images/gallery-2.png" data-toggle="lightbox" data-gallery="gallery-images">
+                      <img src="images/gallery-2.png" class="img-fluid for-img-width">
+                  </a>
+                  <!-- <img src="images/gallery-2.png" class="img-fluid w-100" alt="Gallery Image"> -->
                   <div class="row no-gutters mt-2">
                     <div class="col-6">
-                      <img src="images/gallery-3.png" class="img-fluid h-100 mr-1" alt="Gallery Image">
+                      <a href="images/gallery-3.png" data-toggle="lightbox" data-gallery="gallery-images">
+                          <img src="images/gallery-3.png" class="img-fluid">
+                      </a>
+                      <!-- <img src="images/gallery-3.png" class="img-fluid h-100 mr-1" alt="Gallery Image"> -->
                     </div>
                     <div class="col-6">
                       <div class="more-photos-overlay-wrap">
-                        <div class="more-image-overlay">
-                          <a href="#"><span class="icon-photo"></span> +27</a>
-                        </div>
-                        <img src="images/gallery-4.png" class="img-fluid" alt="Gallery Image">
+                        <a href="images/gallery-4.png" data-toggle="lightbox" data-gallery="gallery-images">
+                        <p><span class="icon-photo"></span> +27</p>
+                        <div class="more-image-overlay"></div>
+                        <img src="images/gallery-4.png" class="img-fluid">
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
+                  <!-- elements not showing, use data-remote -->
+                  <div data-toggle="lightbox" data-gallery="gallery-images" data-remote="images/yeh-xintong-D3H4kdy8n6c-unsplash.png"></div>
+                  <div data-toggle="lightbox" data-gallery="gallery-images" data-remote="images/gallery-2.png"></div>
+                  <div data-toggle="lightbox" data-gallery="gallery-images" data-remote="images/vienna-img.png"></div>
+                  <div data-toggle="lightbox" data-gallery="gallery-images" data-remote="images/gallery-2.png"></div>
+                  <div data-toggle="lightbox" data-gallery="gallery-images" data-remote="images/article-img.png"></div>
               </div>
             </div>
           </div>
@@ -1143,6 +1160,7 @@
     <script src="js/easy-editable-text.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/chartkick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script>
       $('.city-details-places').slick({
@@ -1270,6 +1288,14 @@
         adaptiveHeight: true,
         slidesToScroll: 1
         });
+
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox({
+                  alwaysShowClose: false,
+
+                });
+            });
 
     </script>
 

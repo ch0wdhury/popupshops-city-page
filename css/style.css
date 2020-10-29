@@ -857,16 +857,16 @@ header {
 	color: #fff;
 	font-weight: 600;
 }
+.image-gallery-image-content a {
+	/*margin: 0 0 0 10px;*/
+}
 .image-gallery-image-content img {
-	width: 97%;
-	margin: 0 0 0 10px;
+	width: 99%;
+	/*margin: 0 0 0 10px;*/
 	border-radius: 4px;
 }
 .more-photos-overlay-wrap {
 	position: relative;
-}
-.more-photos-overlay-wrap img {
-	width: 100%;
 }
 .more-image-overlay {
 	position: absolute;
@@ -874,26 +874,35 @@ header {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, .5);
-	z-index: 111;
-	width: 100%;
 	margin: 0 auto;
-	margin-left: 10px;
+	width: 100%;
+	height: 100%;
+	margin-left: 0px;
 	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .5)!important;
+	z-index: 99!important;
 }
-.more-image-overlay a {
-	color: #fff;
+.more-photos-overlay-wrap p {
 	position: absolute;
 	top: 45%;
 	left: 40%;
-	margin: 0 auto;
-	vertical-align: middle;
+	color: #fff;
 	font-size: 14px;
+	margin: auto;
+	vertical-align: middle;
 	line-height: 24px;
 	font-weight: 700;
+	z-index: 999!important;
 }
-.more-image-overlay:hover a {
+.more-photos-overlay-wrap img {
+	border-radius: 4px;
+	margin-left: 0px;
+}
+.more-photos-overlay-wrap:hover p {
 	color: #18BC9C;
+}
+.ekko-lightbox .modal-body {
+	padding: 0;
 }
 /*City Page Image Gallery Section Ends Here*/
 /*Details Box With Image Section Starts Here*/
