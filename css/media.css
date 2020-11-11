@@ -1,5 +1,9 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 	.custom-navbar-brand svg {
 		width: 170px;
 	}
@@ -322,7 +326,7 @@
 	.save-search-float-section p {
 		font-size: 12px;
 	}
-	.modal-content {
+	.save-search-modal-content {
 		width: 300px;
 	}
 	.save-search-modal-body {
@@ -342,10 +346,89 @@
 	.custom-form-input {
 		width: 100%;
 	}
+	.search-page-left-content {
+		position: relative;
+		overflow: hidden;
+		left: 0;
+		margin-left: 0;
+	}
+	.city-search-result-content-map-mobile {
+		height: 300px;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.listing-page-main-title h2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.listing-page-space-feature span {
+		font-size: 16px;
+		padding: 5px;
+		height: 30px;
+		width: 30px;
+	}
+	.listing-page-space-feature h5 {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 38px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 38px;
+	}
+	.listing-page-accordion-card {
+	    padding: 10px 15px;
+	}
+	.listing-page-booking-request-box {
+		padding: 22px 15px 35px 15px;
+	}
+	.listing-page-right-content-card-body {
+		padding: 22px 5px 10px 15px;
+	}
+	.listing-page-calendar {
+	    padding: 30px 5px;
+	    width: 100%;
+	}
+	.booking-page-title-section h2 {
+		font-size: 30px;
+	}
+	.booking-page-card-body {
+		padding: 20px 10px;
+	}
+	.booking-page-card-body h4 {
+		font-size: 16px;
+	}
+	.booking-page-card-body h6 {
+		font-size: 14px;
+	}
+	.booking-page-card-body h5 {
+		font-size: 14px;
+	}
+	.booking-page-total-price {
+		font-size: 18px!important;
+	}
+	.booking-page-navbar-area .nav .nav-link {
+		font-size: 12px;
+	}
+	.booking-page-user-login-option h4 {
+		font-size: 14px;
+	}
+	.radio {
+		padding: 16px 14px 16px 14px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.container-fluid {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
 	.city-page-banner {
 		padding: 250px 0;
 		padding-bottom: 50px;
@@ -548,7 +631,7 @@
 	.search-page-result-image img {
 		width: 95%;
 	}
-	.modal-content {
+	.save-search-modal-content {
 		width: 650px;
 	}
 	.save-search-float-section {
@@ -565,9 +648,39 @@
     	text-overflow: ellipsis;
     	width: 200px!important;
 	}
+	.search-page-left-content {
+		margin-left: 0;
+	}
+	.search-page-card-title {
+		width: 90%;
+	}
+	.city-search-result-content-map {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.listing-page-main-title h2 {
+		font-size: 30px;
+		line-height: 28px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 32px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 32px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 32px;
+	}
+	.booking-page-title-section h2 {
+		font-size: 40px;
+	}
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	.city-page-banner {
 		padding: 250px 0;
 		padding-bottom: 50px;
@@ -734,10 +847,13 @@
 	    font-size: 40px;
 	}
 	.city-search-result-content {
-		margin-top: 30px;
+		margin-top: 10px;
+	}
+	.search-page-result {
+		height: 68%;
 	}
 	.search-page-result-image img {
-		height: 150px;
+		height: auto;
 	}
 	.search-page-city-content .card-title {
 		white-space: nowrap;
@@ -775,7 +891,7 @@
 	.save-search-float-section p {
 		font-size: 12px;
 	}
-	.modal-content {
+	.save-search-modal-content {
 		width: 700px;
 	}
 	.save-search-modal-body {
@@ -788,6 +904,56 @@
     	overflow: hidden;
     	text-overflow: ellipsis;
     	width: 120px!important;
+	}
+	.search-page-left-content {
+		margin-left: 0;
+	}
+	.search-page-city-content {
+	    margin-top: 0px;
+	    width: 100%;
+	}
+	.city-search-result-content-map {
+	    padding-left: 0;
+	    padding-right: 0;
+	    height: 100%;
+	}
+	.search-page-result {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.listing-page-main-title h2 {
+		font-size: 30px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 50px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 50px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 50px;
+	}
+	.booking-page-title-section h2 {
+		font-size: 40px;
+	}
+	.booking-page-card-body {
+		padding: 20px 10px;
+	}
+	.booking-page-card-body h4 {
+		font-size: 16px;
+	}
+	.booking-page-card-body h6 {
+		font-size: 14px;
+	}
+	.booking-page-card-body h5 {
+		font-size: 14px;
+	}
+	.booking-page-total-price {
+		font-size: 18px!important;
+	}
+	.booking-page-navbar-area .nav .nav-link {
+		font-size: 12px;
 	}
 }
 
@@ -882,8 +1048,35 @@
 	.calculation-type-name {
 		font-size: 12px;
 	}
+	.search-page-city-content {
+		margin-top: 15px;
+		width: 98%;
+	}
+	.search-page-left-content {
+		margin-left: 25px;
+	}
 	.footer-social-icon ul:nth-child(2) li {
 		margin-right: 30px;
+	}
+	.city-search-result-content-map {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.listing-page-main-title h2 {
+		font-size: 35px;
+	}
+	.listing-page-month-bars ul li span.active {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span.random {
+		width: 35px;
+	}
+	.listing-page-month-bars ul li span {
+		width: 35px;
+	}
+	.listing-page-calendar {
+	    padding: 30px 10px;
+	    width: 112%;
 	}
 }
 
